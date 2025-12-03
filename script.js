@@ -1,8 +1,9 @@
 //your JS code here. If required.
 function removeColour()
 {
-	const selectElement=document.getElementById('colorSelect');
-			const selectedIndex=selectElement.selectedIndex;
+	const selectElement = document.getElementById('colorSelect');
+	const selectedIndex = selectElement.selectedIndex;
+    
 	if (selectedIndex >= 0){
 		selectElement.options[selectedIndex].remove();
 	}
@@ -11,7 +12,5 @@ function removeColour()
 	}
 }
 
-
 const removeButton = document.querySelector('input[type="button"]');
-
 removeButton.addEventListener('click',removeColour);
